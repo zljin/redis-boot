@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "7a707f99-948c-4873-a351-253fa527c5f0",
+		"name": "surge_redis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone\":\"15073323286\",\n\t\"code\":\"667680\",\n\t\"password\":\"1111\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/app/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "me",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"value": "2d5c87f26eed45fba52af7c6422525b8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone\":\"15073323286\",\n\t\"code\":\"373054\",\n\t\"password\":\"1111\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/app/me",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "likeBlog",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"value": "2d5c87f26eed45fba52af7c6422525b8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone\":\"15073323286\",\n\t\"code\":\"373054\",\n\t\"password\":\"1111\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/app/blog/like/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"blog",
+						"like",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "queryBlogLikes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"value": "2d5c87f26eed45fba52af7c6422525b8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone\":\"15073323286\",\n\t\"code\":\"373054\",\n\t\"password\":\"1111\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/app/blog/likes/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"blog",
+						"likes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "queryShopById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"value": "2d5c87f26eed45fba52af7c6422525b8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone\":\"15073323286\",\n\t\"code\":\"373054\",\n\t\"password\":\"1111\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/app/shop/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"shop",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "queryShopByType",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"value": "2d5c87f26eed45fba52af7c6422525b8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone\":\"15073323286\",\n\t\"code\":\"373054\",\n\t\"password\":\"1111\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/app/shop/of/type?typeId=1&x=120.151505&y=30.333422",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"shop",
+						"of",
+						"type"
+					],
+					"query": [
+						{
+							"key": "typeId",
+							"value": "1"
+						},
+						{
+							"key": "x",
+							"value": "120.151505"
+						},
+						{
+							"key": "y",
+							"value": "30.333422"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendCode",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone\":\"15073323286\",\n\t\"code\":\"123\",\n\t\"password\":\"1111\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/app/code?phone=15073323286",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"code"
+					],
+					"query": [
+						{
+							"key": "phone",
+							"value": "15073323286"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
