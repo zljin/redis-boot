@@ -2,7 +2,7 @@
 
 ## preview
 
-![](https://github.com/zljin/hexo/blob/master/image_address/redis_action_list.png?raw=true)
+![](https://github.com/zljin/blogImage/blob/master/technical/redis_action_list.png?raw=true)
 
 
 ## mission 1: 短信登录，Redis的共享session应用逻辑
